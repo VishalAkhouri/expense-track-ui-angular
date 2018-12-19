@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## TBC
+- two new component
+-- add router
+-- redux @rxjs/store
+-- TBC - get list from the expenses api
+-- TBC - create expenses form and save to the mongodb database
+
+ -- TBC (work on the expenses backend to create routes and ability to save to the database)
+

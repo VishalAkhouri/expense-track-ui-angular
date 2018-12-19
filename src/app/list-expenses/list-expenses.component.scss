@@ -1,0 +1,20 @@
+.expense-list {
+    background-color: transparent;
+
+    ul {
+        background-color: lightgrey;
+        list-style-type: none;
+
+        li {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            padding: 10px;
+
+            .transaction-date {
+                font-size: 16px;
+            }
+        }
+    }
+}

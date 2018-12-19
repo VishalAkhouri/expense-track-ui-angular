@@ -1,0 +1,19 @@
+<section>
+  <header>
+    <h2>List expenses</h2>
+  </header>
+
+  <section *ngIf="expensesList">
+    <div class="expense-list">
+      <ul *ngFor="let expense of expensesList">
+        <li>
+          <span class="transaction-date">{{expense.transactionDate}}</span>
+          <span class="description">{{expense.description}}</span>
+          <span class="amount">{{expense.amount}}</span>
+          <span class="category">{{expense.category}}</span>
+          <span class="source">({{expense.source}})</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+</section>

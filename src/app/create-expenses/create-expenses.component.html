@@ -1,0 +1,61 @@
+<div>
+  <header>
+    <h2>Create expenses</h2>
+  </header>
+
+  <section class="create-expense">
+    <form [formGroup]="expenseForm">
+      <div class="expense-form-control">
+          <label>
+            <span>Description</span>
+            <input type="text" formControlName="description" (change)="handleFormChanged()"/>
+          </label>
+          <span class="error" *ngIf="isFieldValid('description')">Enter desciption</span>
+      </div>
+      
+      <div class="expense-form-control">
+          <label>
+              <span>Amount</span>
+              <input type="text" formControlName="amount" (change)="handleFormChanged()"/>
+            </label>
+            <span class="error" *ngIf="isFieldValid('amount')">Enter amount</span>
+      </div>
+
+      <div class="expense-form-control">
+          <label>
+            <span>Category</span>
+            <input type="text" formControlName="category" (change)="handleFormChanged()"/>
+          </label>
+          <span class="error" *ngIf="isFieldValid('category')">Enter category</span>
+      </div>
+
+      <div class="expense-form-control">
+          <label>
+            <span>Source</span>
+            <input type="text" formControlName="source" (change)="handleFormChanged()"/>
+          </label>
+          <span class="error" *ngIf="isFieldValid('source')">Enter source</span>
+      </div>
+
+      <div class="expense-form-control">
+          <label>
+            <span>Transaction Date</span>
+            <input type="text" formControlName="transactionDate" (change)="handleFormChanged()"/>
+          </label>
+          <span class="error" *ngIf="isFieldValid('transactionDate')">Enter transaction date</span>
+      </div>
+
+      <div class="expense-form-control">
+          <label>
+            <span>Creation Date</span>
+            <input type="text" formControlName="creationDate" (change)="handleFormChanged()"/>
+          </label>
+          <span class="error" *ngIf="isFieldValid('creationDate')">Enter creation date</span>
+      </div>
+
+      <div>
+          <button type="button" (click)="handleExpenseSubmitted()">Submit</button>
+      </div>
+    </form>
+  </section>
+</div>
